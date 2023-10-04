@@ -5,8 +5,6 @@ let users = []
 
 searching.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase();
-    if (value === "t") {
-        console.log("kyu");
     users.forEach(user => {
         const userName = user.name.toLowerCase();
         const isPresent = userName.includes(value);
