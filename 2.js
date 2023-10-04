@@ -5,8 +5,8 @@ let users = []
 searching.addEventListener("input", (e) => {
     const  value  = e.target.value.toLowerCase()
     users.forEach(  user => {
-        user.name = user.name.toLowerCase()
-        const ispresent = user.name.includes(value)
+        a = user.name.toLowerCase()
+        const ispresent = a.includes(value)
         user.element.classList.toggle("hide",!ispresent)
 })
 }
