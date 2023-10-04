@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&family=Pacifico&family=Tangerine:wght@700&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="2.js" defer></script>
+    <style>
+        .bck {
+            background-image: linear-gradient(to right, rgb(19, 1, 97) 0%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        .heading {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 100px;
+            background:  rgba(255, 255, 255, 0.912);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .heading:hover {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 100px;
+            background: rgba(255, 255, 255, 0.912);
+            text-shadow: 0 0 10px rgb(255, 255, 255,0.5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        input[type=search] {
+            width: 30%;
+            padding: 12px 20px;
+            margin: rem 5;
+            box-sizing: border-box;
+            border: 2px solid rgba(255, 255, 255, 0);
+            border-radius: 4px;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.853);
+            color: rgb(19, 1, 97);
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .name-container {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+            gap: .5rem;
+        }
+
+        .names {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-family: 'Open Sans', sans-serif;
+            font-size: 50px;
+            color: azure;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+    <title>Search</title>
+</head>
+
+<body class="bck">
+    <h2 class="heading">Welcome</h2>
+    <div>
+        <input type="search" placeholder="Search here" searching>
+    </div>
+    <div class="name-container" name-container></div>
+    <template name-template>
+        <div class="names"></div>
+    </template>
+</body>
+
+</html>
