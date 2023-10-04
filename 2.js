@@ -23,3 +23,4 @@ fetch('https://dummyjson.com/users?limit=0&select=firstName')
         return {name:name.firstName,element:card}
     })
 })
+
